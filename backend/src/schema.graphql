@@ -1,0 +1,36 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Brand {
+  id: Int!
+  name: String!
+}
+
+type City {
+  id: Int!
+  name: String!
+}
+
+type Diet {
+  id: Int!
+  name: String!
+}
+
+type DishType {
+  id: Int!
+  name: String!
+}
+
+type Query {
+  hello(name: String!): String!
+  helloWorld: String!
+  smartSearch(searchTerm: String!): [SmartSearch!]!
+}
+
+type SmartSearch {
+  brand: Brand
+  city: City
+  diet: Diet
+  dishType: DishType
+}

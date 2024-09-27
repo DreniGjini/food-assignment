@@ -1,0 +1,20 @@
+query SmartSearch($searchTerm: String!) {
+  smartSearch(searchTerm: $searchTerm) {
+    city {
+      id
+      name
+    }
+    dishType {
+      id
+      name
+    }
+    brand {
+      id
+      name
+    }
+    diet {
+      id
+      name
+    }
+  }
+}
